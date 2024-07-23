@@ -24,7 +24,7 @@ public class Main {
         var res = conexao.chamaApi();
         EnderecoMapApi enderecoApi = gson.fromJson(res,EnderecoMapApi.class);
         Endereco endereco = new Endereco(enderecoApi);
-
+        System.out.println(endereco);
 
     }
 }
